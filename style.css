@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  header {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+  }
+  
+  #sidebar {
+    flex: 1;
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #room-list, #user-list {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #room-list ul, #user-list ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  #room-list li, #user-list li {
+    margin: 5px 0;
+  }
+  
+  #room-list li a, #user-list li a {
+    display: block;
+    padding: 5px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+  }
+  
+  #room-list li a:hover, #user-list li a:hover {
+    background-color: #f2f2f2;
+  }
+  
+  #chat-window {
+    flex: 3;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #chat-window header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  #chat-messages {
+    height: 400px;
+    overflow-y: scroll;
+    padding: 10px;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .message p {
+    margin: 0;
+  }
+  
+  .message time {
+    font-size: 12px;
+    color: #999;
+    margin-left: 10px;
+  }
+  
+  #message-form {
+    display: flex;
+    margin: 10px;
+  }
+  
+  #message-form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  #message-form button[type="submit"] {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  #message-form button[type="submit"]:hover {
+    background-color: #333;
+  }
+  
+  /* Add styles for different chat rooms */
+  
+  #design-chat header {
+    background-color: #22a7f0;
+  }
+  
+  #programming-chat header {
+    background-color: #f39c12;
+  }
+  
